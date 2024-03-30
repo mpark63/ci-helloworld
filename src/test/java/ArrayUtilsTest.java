@@ -1,4 +1,7 @@
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayUtilsTest {
@@ -44,5 +47,12 @@ public class ArrayUtilsTest {
     @Test
     public void testOddOrPositiveBothPositivesAndNegatives() {
         assertEquals(3, ArrayUtils.oddOrPos(new int[]{-3, -2, 0, 1, 4}));
+    }
+
+    @Test
+    public void testCountOf() {
+        int[] arr = {0,1,1,0,0};
+        assertEquals(2, ArrayUtils.countOf(arr, 1));
+        assertEquals(3, ArrayUtils.countOf(arr, 0));
     }
 }
