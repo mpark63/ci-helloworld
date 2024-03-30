@@ -4,7 +4,7 @@ ARG JAR_FILE=workspace/build/libs/ci-helloworld-1.0-SNAPSHOT.jar
 RUN mkdir -p /workspace
 COPY build.gradle /workspace
 COPY gradlew /workspace
-COPY settings.gradle /workspace
+COPY settings.gradle.kts /workspace
 COPY gradle /workspace/gradle
 COPY src /workspace/src
 WORKDIR /workspace
